@@ -1,0 +1,180 @@
+/* Intro */
+.about {
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 70px 30px 70px;
+  background-color: #c5dff8b1;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2rem;
+  color: #245c93;
+}
+  
+.about h1 {
+  font-size: 3rem !important;
+}
+  
+.about p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 1.5rem !important;
+
+}
+
+  /* About us text */
+.harry-intro {
+  font-size: 1.4rem !important;
+  padding-top: 20px !important;
+  margin-bottom: 50px !important;
+  margin-left: -27px;
+}
+
+  /* Photo */
+.photoOfHarry {
+  max-height: 18em;
+  max-width: 20em !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 20%;
+  margin: 0 auto;
+}
+
+/* Service text */
+.why-choose{
+  background-color: #eff2f5de;
+  padding: 15px 37px;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.why-choose p {
+  font-size: 1.4rem;
+
+}
+
+.service-text h2 {
+  margin: 20px 0px 20px 0px;
+  font-size: 2.5rem;
+}
+
+/* Contact link */
+.contact-link {
+  color: #245c93;
+}
+
+.contact-link-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.7rem;
+}
+
+/* Media Queries */
+@media (max-width: 690px) {
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  .harry-intro {
+    font-size: 1.2rem !important;
+    text-align: left !important;
+  }
+  .why-choose p {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .why-choose h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .contact-link-text {
+    text-align: center;
+    margin-top: 40px !important;
+    font-size: 1.5rem;
+  }
+  .photoOfHarry {
+    margin-bottom: 20px !important;
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1490px ){
+  .photoOfHarry {
+    margin-bottom: 20px !important;
+    width: 90% !important;
+  }
+  .harry-intro {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .harry-intro {
+    text-align: center !important;
+    }
+  .about h1 {
+    padding-left: 13px !important;
+  }
+}
+
+
+@media (min-width: 420px) and (max-width: 500px) {
+  .service-text {
+    font-size: 1.2rem !important;
+    margin-left: 10px;
+    margin: 0 auto !important;
+  }
+  .harry-intro {
+    font-size: 1.1rem !important;
+    margin-left: -15px !important;
+  }
+  .photoOfHarry {
+    width: 80% !important;
+  }
+  .why-choose {
+    margin-left: -5px !important;
+    width: 99%;
+  }
+}
+
+@media (max-width: 370px) {
+  .service-text {
+    font-size: 1rem !important;
+    margin-left: -40px;
+  }
+  .harry-intro {
+    font-size: 1.1rem !important;
+  }
+  .why-choose {
+    margin-left: 20px !important;
+    width: 90% !important;
+  }
+  .contact-link-text {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 370px) {
+  .service-text {
+    font-size: 1rem !important; 
+    margin-left: -10px !important; 
+  }
+  .harry-intro {
+    font-size: 1.1rem !important;
+  }
+  .why-choose {
+    margin-left: 20px !important;
+    width: 90% !important;
+  }
+  .contact-link-text {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 2000px) {
+  .harry-intro {
+  margin-left: -27px !important;
+}
+
+  
+}

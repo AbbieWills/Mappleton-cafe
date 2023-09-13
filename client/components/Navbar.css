@@ -1,0 +1,138 @@
+/* Reset default styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+.nav-link.active {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #245c93 !important;
+    font-size: 1.6rem;
+    padding: 20px;
+    background-color: #72b3f4;
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0 -10px 0 80px;
+
+}
+
+.navbar {
+    background-color: #72b3f4;
+    height: auto;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    background-color: #72b3f4;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-keys {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.navbar-title {
+    font-size: 2.2rem;
+    padding-left: 20px;
+}
+
+/* Navbar Brand Styles */
+.navbar-brand {
+    color: #fff !important;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2rem;
+    margin-left: -50px;
+    padding: 15px;
+}
+
+.navbar-brand:hover {
+    color: #245c93 !important;
+}
+
+
+/* logo */
+.logo {
+    width: 7%;
+    height: 7%;
+    transition: filer 0.3 ease;}
+
+.logo:hover {
+    filter: brightness(1.2);
+}
+
+
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 0.9rem !important;
+        margin: 0 auto !important;
+    }
+
+}
+
+
+@media (min-width:481px) and (max-width: 1000px) {
+    .navbar-brand {
+        font-size: 1.3rem !important;
+        margin: 0 auto !important;
+    }
+    .nav-link {
+        font-size: 1.3rem !important;
+        margin-top: 10px !important;
+    }
+    .navbar-toggler{
+        margin: 10px auto !important;
+        }
+}
+
+@media (max-width: 1350px) {
+    .navbar-brand {
+        font-size: 1.7rem;
+    }
+
+    .navbar-title {
+        font-size: 1.7rem;
+    }
+
+    .nav-keys {
+        font-size: 1rem;
+    }
+    .nav-link {
+        font-size: 1.5rem;
+        margin: 0 -10px 0 40px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-title,
+    .nav-keys {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .navbar-title {
+        padding-left: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 1.7rem;
+    }
+}

@@ -1,0 +1,269 @@
+/* Title */
+.servicing-title {
+    font-size: 3rem !important;
+    margin-bottom: 30px !important;
+} 
+
+/* Prices */
+.pricing {
+    /* background-color: #eff2f5de; */
+    padding: 20px;
+    background-color: #eff2f5de;
+    border-radius: 10px;
+    width: 60% !important;
+    margin: 35px auto !important;
+    border: 2px dashed #245c93;
+    text-align: center;
+}
+
+.price-list {
+    margin-bottom: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.4rem;
+} 
+
+.repairs-text {
+    text-align: center !important;
+    font-size: 1.3rem;
+    margin-top: 20px !important;
+}
+
+.pricing-intro {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Right jacket text */
+.pricing-heading {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.right-jacket-text, .sizing-text {
+    font-size: 1.3rem;
+    margin-bottom: 40px !important;
+}
+
+.sizing-guidelines, .understanding {
+    font-weight: bold !important;
+    margin-bottom: -2px !important;
+    margin-top: -15px;
+    font-size: 1.5rem !important;
+}
+
+.understanding {
+    margin-top: 20px !important;
+}
+
+/* Life Jacket Levels */
+.levels-section {
+    background-color: #eff2f5de;
+    border-radius: 10px;
+    width: 100% !important;
+    margin: 0 auto !important;
+    margin-top: 40px !important;
+}
+
+.levels-title{
+    text-align: center;
+    margin-top: 30px !important;
+}
+
+.levels {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 20px 20px 0 20px;
+}
+
+.levels-text {
+    font-size: 1.2rem;
+    padding: 0 20px 20px 20px;
+
+}
+
+.lj-photo{
+    max-width: 200px;
+    max-height: 300px;
+    margin: 0 auto;
+    display: block !important;
+    margin-top: -14px;
+    margin-bottom: 15px;
+}
+
+
+.individual {
+    border: 2px solid #245c93;
+    border-radius: 10px;
+    padding: 10px !important;
+    margin: 30px auto !important;
+    width: 30% !important;
+}
+
+  
+
+/* Contact text */
+.contact-link-text a, .repairs-text a {
+    color: #245c93;
+}
+  
+.contact-link-text {
+    text-align: center !important;
+    margin-top: 40px;
+    font-size: 1.7rem;
+}  
+
+
+@media (max-width: 1200px) {
+    .individual {
+      width: 90% !important;
+      margin: 30px auto !important;
+    }
+  }
+
+@media (max-width: 700px) {
+    .servicing-title {
+        font-size: 2.5rem !important;
+    }
+    .about h2 {
+        font-size: 1.8rem !important;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+    .pricing-intro {
+        text-align: left !important;
+    }
+    .right-jacket-text, .sizing-text {
+        font-size: 1.3rem;
+        text-align: left !important;
+    }
+    .understanding, .sizing-guidelines {
+        text-align: left !important;
+        font-size: 1.4rem !important;
+    }
+    .levels-text {
+        text-align: left !important;
+    }
+    .individual {
+        width: 100% !important;
+        margin: 15px auto !important;
+    }
+    .price-list {
+        font-size: 1.3rem !important;
+        text-align: left !important;
+    }
+    .pricing h2 {
+        font-size: 1.7rem !important;
+        text-align: left !important;
+    }
+    .contact-link-text {
+        font-size: 1.5rem !important;
+        margin-top: -5px;
+    }
+    .levels-section {
+        padding: 10px 30px 10px 30px;
+        margin-bottom: 30px !important;
+    }
+  }
+
+@media (max-width: 1500px) {
+    .pricing {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .lj-photo {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .levels-text {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+    }
+    .levels-section {
+        padding: 15px;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .about {
+        width: 550px !important;
+        margin-left: -30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .lj-photo {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .levels-text {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+    }
+    .levels-section {
+        padding: 15px;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .about {
+        width: 530px !important;
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .lj-photo {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .levels-text {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+    }
+    .levels-section {
+        padding: 15px;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .about {
+        width: 480px !important;
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .lj-photo {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .levels-text {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+    }
+    .levels-section {
+        padding: 15px;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .about {
+        width: 450px !important;
+        margin-left: -45px;
+    }
+}
+
+@media (max-width: 345px) {
+    .levels-text {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+    }
+    .about {
+        width: 440px !important;
+        margin-left: -47px;
+        font-size: 0.9px !important;
+    }
+    .pricing-intro {
+        font-size: 1.3rem !important;
+    }
+}
+
