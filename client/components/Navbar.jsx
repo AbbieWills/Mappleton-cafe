@@ -2,14 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
-import logo from "./logo.png";
 
 const NavbarComponent = () => {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <NavLink className="navbar-brand" to="/">
-        Kemps Maritime Professional Services <img className="logo" src={logo} alt="logo" /></NavLink>
+        The Old Post Office and Tearooms
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"

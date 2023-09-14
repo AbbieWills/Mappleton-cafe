@@ -5,14 +5,8 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstname: '',
     lastname: '',
-    business: '',
-    location: '',
     email: '',
-    phone: '',
     subject: '',
-    brand: '',
-    type: '',
-    quantity: '',
   });
 
   const handleInputChange = (e) => {
@@ -21,23 +15,12 @@ const ContactForm = () => {
   };
 
   const composeMailTo = () => {
-    const { firstname, lastname, business, location, email, phone, subject, brand, type, quantity } = formData;
+    const { subject } = formData;
 
     // Compose the mailto URL
-    const mailto = `mailto:enquiries@kempsmps.com?subject=${encodeURIComponent("New Life Jacket Enquiry")}&body=
-    First Name: ${encodeURIComponent(firstname)}
-    Last Name: ${encodeURIComponent(lastname)}
-    Business: ${encodeURIComponent(business)}
-    Location: ${encodeURIComponent(location)}
-    Email: ${encodeURIComponent(email)}
-    Phone: ${encodeURIComponent(phone)}
-    Brand of Life Jacket: ${encodeURIComponent(brand)}
-    Type of Life Jacket: ${encodeURIComponent(type)}
-    Quantity of Life Jackets: ${encodeURIComponent(quantity)}
-    Subject: ${encodeURIComponent(subject)}
+    const mailto = `mailto:enquiries@kempsmps.com?subject=${encodeURIComponent("New Cafe Enquiry")}&body=
+    ${encodeURIComponent(subject)}
     `;
-
-    // Open the user's email client
     window.location.href = mailto;
   };
 
@@ -45,62 +28,48 @@ const ContactForm = () => {
     <div className="contact-form">
       <h1 className="address">Contact us</h1>
       <p className="address">
-        Located in Hull, East Yorkshire, UK. <br /> Contact now to book a collection slot (30-mile radius) or delivery (rest of UK). <br /> <br />
-        enquiries@kempsmps.com <br /> <br/>
+        Located in Mappleton East Yorkshire, UK. <br />
+        
+        {/* Add a table which shows opening times */}
+        <div className='opening-container'>
+        <h2 className="address">Opening Times</h2>
+        <table className="opening-times">
+            <tbody>
+          <tr>
+            <th className='day-column'>Day</th>
+            <th className='time-column'>Time</th>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>10am - 2pm</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>CLOSED</td>
+          </tr>
+          <tr>
+            <td>Wednesday-Sunday</td>
+            <td>9am - 4pm</td>
+          </tr>
+          </tbody>
+        </table>
+        </div>
+         <br /> <br/>
       </p>
       <form className='form' onSubmit={composeMailTo}>
         <h2 className="address">Contact Form</h2>
         <div className="row">
-          <div className="col-md-6">
-            <label htmlFor="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." required onChange={handleInputChange} value={formData.firstname} />
+          <div className="col-md-12">
+            <label htmlFor="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required onChange={handleInputChange} value={formData.name} />
           </div>
-          <div className="col-md-6">
-            <label htmlFor="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required onChange={handleInputChange} value={formData.lastname} />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6">
-            <label htmlFor="business">Business</label>
-            <input type="text" id="business" name="business" placeholder="Your business name (optional).." onChange={handleInputChange} value={formData.business} />
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="location">Location</label>
-            <input type="text" id="location" name="location" placeholder="Your address.." required onChange={handleInputChange} value={formData.location} />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-12">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email.." required onChange={handleInputChange} value={formData.email} />
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="phone">Phone</label>
-            <input type="number" id="phone" name="phone" placeholder="Your phone number.." required onChange={handleInputChange} value={formData.phone} />
+            <input type="text" id="email" name="email" placeholder="Your email.." required onChange={handleInputChange} value={formData.email} />
           </div>
         </div>
         <label htmlFor="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write here.." required onChange={handleInputChange} value={formData.subject}></textarea>
-        <label htmlFor="life-jacket-brand">Brand of life jacket</label>
-        <input type="text" id="life-jacket-brand" name="brand" placeholder="Enter brand.." required onChange={handleInputChange} value={formData.brand} />
-        <div className="row">
-          <div className="col-md-6">
-            <label htmlFor="life-jacket-type">Type of life jacket</label>
-            <select id="life-jacket-type" name="type" required onChange={handleInputChange} value={formData.type}>
-              <option value="" disabled>
-                Select a type
-              </option>
-              <option value="solas">Solas</option>
-              <option value="non-solas">Non-Solas (ISO)</option>
-            </select>
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="quantity">Quantity of life jackets</label>
-            <input type="number" id="quantity" name="quantity" placeholder="Enter quantity.." required onChange={handleInputChange} value={formData.quantity} />
-            <br />
-          </div>
-        </div>
         <button id="submit" className="submit" type="submit" value="Submit">Submit</button>
       </form>
     </div>

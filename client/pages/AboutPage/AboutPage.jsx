@@ -18,7 +18,7 @@ const AboutPage = () => {
           KempsMPS understands the challenges posed by the shipping industry's demanding timelines, and we have taken decisive steps to address them. We operate round the clock to ensure the prompt collection and servicing of your life jackets. Additionally, we are committed to providing you with a realistic timeframe for the completion of the servicing process. Our aspiration is to deliver service of the highest safety standards with an expedited turnaround time.
                     <br/><br/> Leveraging my extensive experience in the maritime industry, I am determined to enhance the efficiency and safety of life jacket servicing. At KempsMPS, we blend maritime expertise with unwavering dedication to redefine industry standards and meet the evolving needs of our valued clients. </p>           </div>
 
-          <p className='contact-link-text'><a className='contact-link' href='/contact'>Contact us</a> today to learn more about our services and how we can help you stay safe on the water.</p>
+                    <p className='contact-link-text'> Have a question? <a href='/contact'>Get in touch</a></p>
         </div>
       </div>
 

@@ -7,28 +7,28 @@ html {
 
 /* Navigation Styles */
 .nav-link.active {
-    color: #fff !important;
+text-decoration: underline;
 }
 
 .nav-link {
-    color: #245c93 !important;
+    color: #fff !important;
     font-size: 1.6rem;
     padding: 20px;
-    background-color: #72b3f4;
+    background-color: #A0C49D;
     font-family: 'Maven Pro', sans-serif;
     margin: 0 -10px 0 80px;
 
 }
 
 .navbar {
-    background-color: #72b3f4;
+    background-color: #A0C49D;
     height: auto;
     z-index: 1000;
     padding: 10px 0;
 }
 
 .navbar-container {
-    background-color: #72b3f4;
+    /* background-color: #72b3f4; */
     font-size: 1.3rem;
     display: flex;
     align-items: center;
@@ -54,10 +54,6 @@ html {
     font-size: 2rem;
     margin-left: -50px;
     padding: 15px;
-}
-
-.navbar-brand:hover {
-    color: #245c93 !important;
 }
 
 

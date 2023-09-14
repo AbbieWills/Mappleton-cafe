@@ -2,15 +2,21 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './carousel.css';
-// import jacket from './jacket.jpg';
-// import jacket2 from './jacket2.jpg';
+import outside from "./images/outside.png"
+import frontCounter from "./images/front-counter.png"
+import counter from "./images/counter.png"
+import sweets from "./images/sweets2.png"
+import mainSeating from "./images/large-seating.png"
+import outdoorSeating from "./images/outdoor-seating.png"
+import bothTables from "./images/bothTables.png"
+import jams from "./images/jams.png"
 
 
 const ImageCarousel = () => {
   return (
     <div className="full-width-carousel-container">
     <Carousel
-      autoPlay={true}
+      autoPlay={false}
       infiniteLoop={true}
       interval={3300}
       showStatus={false}
@@ -19,23 +25,30 @@ const ImageCarousel = () => {
       className="full-width-carousel"
     >
       <div>
-        <img className='carousel-img' src="https://images.unsplash.com/photo-1465171550359-133629cbded9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80" alt="blue_background_jacket" />
+        <img className='carousel-img' src={outside} alt="outsidePhoto" />
       </div>
       <div>
-        <img className='carousel-img' src="https://images.unsplash.com/photo-1561623497-3ab314e8f8a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="people_throwing" />
+        <img className='carousel-img' src={frontCounter} alt="frontCounter" />
       </div>
       <div>
-        <img  className='carousel-img' src="https://images.unsplash.com/photo-1520627226741-957359a3caab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="jackets_on_rail" />
+        <img className='carousel-img' src={counter} alt="counterPhoto" />
       </div>
       <div>
-        <img className='carousel-img' src='https://images.unsplash.com/photo-1583008584407-25bcb00b12ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80' alt='less_jackets_on_rail' />
-      </div>
-      {/* <div>
-        <img className='carousel-img' src={jacket} alt='jackets_on_ship_table' />
+        <img className='carousel-img' src={sweets} alt="sweetsPhoto" />
       </div>
       <div>
-        <img className='carousel-img' src={jacket2} alt='jackets_on_ship_shelf' />
-      </div> */}
+        <img className='carousel-img' src={jams} alt="jamsAndCakes" />
+      </div>
+      <div>
+        <img className='carousel-img' src={bothTables} alt="indoorTables" />
+      </div>
+      <div>
+        <img className='carousel-img' src={mainSeating} alt="mainSteatingPhoto" />
+      </div>
+      <div>
+        <img className='carousel-img' src={outdoorSeating} alt="OutdoorSeatingPhoto" />
+      </div>
+
     </Carousel>
     </div>
   );

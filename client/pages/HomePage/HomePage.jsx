@@ -1,7 +1,7 @@
 import React from 'react';
 import './homepage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLifeRing, faLocationDot, faShip, faTruckFast } from '@fortawesome/free-solid-svg-icons';
+import { faPaw, faLocationDot, faShip, faTruckFast } from '@fortawesome/free-solid-svg-icons';
 import ImageCarousel from '../../components/Carousel/carousel.jsx';
 
 const HomePage = () => {
@@ -9,16 +9,19 @@ const HomePage = () => {
     <>
 
       <div className="row intro-explain-container">
-        <div>
-          <h1 className='intro'>Life Jacket Servicing</h1>
-          <h2 className='approved'>Approved and authorised Lalizas service station.</h2>
+        <div className='intro'>
+          <h1>The Old Post Office and Tearooms at Mappleton</h1>
+          <h2><FontAwesomeIcon icon={faPaw} size="3x" className="paw-left"/>
+                  We Are Dog Friendly!
+              <FontAwesomeIcon icon={faPaw} size="3x" className="paw"/>
+
+          </h2>
         </div>
 
           <ImageCarousel />
           <div>
-            <p className='explain'>Welcome to Kemps MPS, your trusted partner for life jacket servicing. We understand the
-          importance of safety on the water, and that's why we're committed to keeping your life jackets
-          in peak condition. <br/>We ensure your life jackets are prepared for any venture, whether it's recreational, professional, or commercial in nature.
+            <p className='explain'>The Old Post Office and Tearooms is a family-run business that offers a wide range of high quality fresh products. <br/>
+            We are located in the heart of Mappleton, a small village on the East Yorkshire coast. Serving a variety of hot and cold food and drinks.
             </p>
           </div>
       </div>
@@ -27,7 +30,7 @@ const HomePage = () => {
       <div className="row">
         <div className="col-sm-12 col-lg-6">
           <div className="feature-card text-center">
-            <FontAwesomeIcon icon={faLifeRing} size="3x" className="mb-3 ring"/>
+            <FontAwesomeIcon icon={faPaw} size="3x" className="mb-3 ring"/>
             <h4 className='iconTitle'>Safety</h4>
             <p>Safety is our top priority. Whether you are a recreational boater, a fisherman,
           an adventure seeker or just part of the commerical sector, you can trust us to provide reliable and professional life jacket
@@ -58,7 +61,7 @@ const HomePage = () => {
       </div>
       
       </div>
-      <p className='contact-link-text'> <a href='/contact'>Contact us</a> today to learn more about our services and how we can help you stay safe on the water.</p>
+      <p className='contact-link-text'> Have a question? <a href='/contact'>Get in touch</a></p>
 
 
     </>

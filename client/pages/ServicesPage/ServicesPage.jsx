@@ -50,7 +50,7 @@ const ServicesPage = () => {
           <img className='lj-photo' src={twohundredseventyfive} alt="275-lf" />
           </div>
         </div>
-        <p className='contact-link-text'> <a href='/contact'>Contact us</a> today to learn more about our services and how we can help you stay safe on the water.</p>
+        <p className='contact-link-text'> Have a question? <a href='/contact'>Get in touch</a></p>
       </div>
 
     </>
