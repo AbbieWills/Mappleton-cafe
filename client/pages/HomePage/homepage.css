@@ -80,21 +80,22 @@ body {
 
 /* Feature icons */
 
-.ring {
-    color: #f68249f8;
+.dogFriendly {
+    color: #b8673ff8;
+    
 }
 
 .route {
-    color: #ff0000b8;
+    color: #007bffb8;
 
 }
 
-.truck {
+.people {
     color: #3f9708f8;
 }
 
-.ship {
-    color: #3e50f3c8;
+.cake {
+    color: #e1c693;
 }
 
 .iconTitle {

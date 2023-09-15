@@ -1,7 +1,7 @@
 import React from 'react';
 import './homepage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaw, faLocationDot, faShip, faTruckFast } from '@fortawesome/free-solid-svg-icons';
+import { faPaw, faUmbrellaBeach, faPeopleRoof, faCake } from '@fortawesome/free-solid-svg-icons';
 import ImageCarousel from '../../components/Carousel/carousel.jsx';
 
 const HomePage = () => {
@@ -30,32 +30,32 @@ const HomePage = () => {
       <div className="row">
         <div className="col-sm-12 col-lg-6">
           <div className="feature-card text-center">
-            <FontAwesomeIcon icon={faPaw} size="3x" className="mb-3 ring"/>
-            <h4 className='iconTitle'>Safety</h4>
-            <p>Safety is our top priority. Whether you are a recreational boater, a fisherman,
-          an adventure seeker or just part of the commerical sector, you can trust us to provide reliable and professional life jacket
-          servicing. </p>
+            <FontAwesomeIcon icon={faPaw} size="3x" className="mb-3 dogFriendly"/>
+            <h4 className='iconTitle'>Dog Friendly!</h4>
+            <p> We're proud to be dog-friendly! With a spacious outdoor seating area and a cozy indoor section, there's room for everyone, including your furry friends. 
+              Plus, you can find dog friendly treats and home-made doggy ice cream!
+            </p>
           </div>
         </div>
         <div className="col-sm-12 col-lg-6">
           <div className="feature-card text-center">
-            <FontAwesomeIcon icon={faLocationDot} size="3x" className="mb-3 route"/>
-            <h4 className='iconTitle'>Ideal Location</h4>
-            <p>Strategically situated in proximity to Hull, East Yorkshire. Our location has been carefully chosen to cater to a wide range of needs and preferences, making it the ideal destination for individuals seeking top-notch services and solutions!</p>
+            <FontAwesomeIcon icon={faUmbrellaBeach} size="3x" className="mb-3 route"/>
+            <h4 className='iconTitle'>On the Beach</h4>
+            <p>Situated just steps away from the picturesque Mappleton beach, our location is a true haven for all walkers (including dogs) seeking a delightful break during their coastal strolls!</p>
           </div>
         </div>
         <div className="col-sm-12 col-lg-6" >
           <div className="feature-card text-center">
-            <FontAwesomeIcon icon={faTruckFast} size="3x" className="mb-3 truck" />
-            <h4 className='iconTitle' >Quick Turnaround</h4>
-            <p>We provide precise and reliable estimates for the completion of your life jacket servicing. If you opt for our transportation service, you could have your life jacket returned within just one day from the date of service. Please be aware that if you require a same-day turnaround, kindly specify this in your inquiry, as we may accommodate such requests based on availability.</p>
+            <FontAwesomeIcon icon={faCake} size="3x" className="mb-3 cake" />
+            <h4 className='iconTitle'>Fresh Cakes</h4>
+            <p>We absolutely love baking, and we do it regularly to ensure there's always a wonderful variety of freshly made cakes, cookies and scones waiting for you.</p>
           </div>
         </div>
         <div className="col-sm-12 col-lg-6">
           <div className="feature-card text-center">
-            <FontAwesomeIcon icon={faShip} size="3x" className="mb-3 ship"/>
-            <h4 className='iconTitle'>Experienced</h4>
-            <p>Coupled with years of industry experience, our team of experts is unwavering in their commitment to guaranteeing that your life jackets consistently adhere to the most stringent safety standards.</p>
+            <FontAwesomeIcon icon={faPeopleRoof} size="3x" className="mb-3 people"/>
+            <h4 className='iconTitle'>Family Ran</h4>
+            <p>At The Old Post Office and Tearooms, we're a close-knit family team, and we'd love nothing more than for you to drop by and say hello!</p>
           </div>
         </div>
       </div>

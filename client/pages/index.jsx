@@ -3,5 +3,6 @@ export {default as AboutPage} from "./AboutPage/AboutPage"
 export {default as ContactPage} from "./ContactPage/ContactPage"
 export {default as ServicesPage} from "./ServicesPage/ServicesPage"
 export {default as NotFoundPage} from "./NotFoundPage/NotFoundPage"
+export {default as HolidayLetPage} from "./HolidayLetPage/HolidayLetPage"
 
 
